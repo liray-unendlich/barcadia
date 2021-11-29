@@ -6,7 +6,7 @@ import Product from "../Products/Product"
 const getProducts = graphql`
   query {
     featuredProducts: allContentfulProducts(
-      filter: { featured: { eq: true } }
+      filter: { featured: { eq: true }, node_locale: { eq: "en-US" } }
     ) {
       edges {
         node {
@@ -30,6 +30,9 @@ const Features = () => {
 
   return (
     <ProductsStyles>
+      <h2>
+        Our portfolio of nodes(validator, indexer and so on)
+      </h2>
       <div className="features__container">
         <div className="features__container--scroll">
           {products.map(({ node }) => {

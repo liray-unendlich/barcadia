@@ -5,7 +5,9 @@ import Product from "./Product"
 
 const getProducts = graphql`
   query {
-    products: allContentfulProducts {
+    products: allContentfulProducts (
+      filter: { node_locale: { eq: "en-US" } }
+    ) {
       edges {
         node {
           name
@@ -27,13 +29,13 @@ const getProducts = graphql`
 
 const Features = () => {
   const response = useStaticQuery(getProducts)
-  const products = response.products.edges
+  const Products = response.products.edges
 
   return (
     <ProductsStyles>
       <div className="features__container">
         <div className="features__container--scroll">
-          {products.map(({ node }) => {
+          {Products.map(({ node }) => {
             return <Product feature={node} />
           })}
         </div>

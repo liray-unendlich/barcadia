@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-}  
+}
 
 
 body {
@@ -76,7 +76,7 @@ body {
     color: #fff;
     overflow-x: hidden;
     font-size: var(--p);
-    
+
   }
 
 h1,
@@ -169,11 +169,11 @@ button.btn {
   }
 
   .section-padding {
-    padding: var(--paddingStd) var(--paddingBorder);
+    padding: 0 var(--paddingStd) 0 var(--paddingBorder);
   }
-  
+
   .section-padding--large {
-    padding: var(--paddingLarge) var(--paddingBorder);
+    padding: 0 var(--paddingLarge) 0 var(--paddingBorder);
   }
 `
 

@@ -1,26 +1,26 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import { StaticImage } from "gatsby-plugin-image"
-import Contact from "../components/Contact/Contact"
+import Features from "../components/Products/Products"
 import Seo from "../components/SEO"
 import SimpleBanner from "../components/SimpleBanner/SimpleBanner"
+import { StaticImage } from "gatsby-plugin-image"
 
-const contact = () => {
+const products = () => {
   return (
     <>
-      <Seo title="Contact" />
+      <Seo title="Services" />
       <Layout>
-        <SimpleBanner title="Get in touch">
+        <SimpleBanner title="All Services">
           <StaticImage
             className="banner__image"
-            src="../images/support.jpg"
-            alt="Support Desk"
+            src="../images/servicelist.jpg"
+            alt="Servicelist"
           />
         </SimpleBanner>
-        <Contact />
+        <Features />
       </Layout>
     </>
   )
 }
 
-export default contact
+export default products

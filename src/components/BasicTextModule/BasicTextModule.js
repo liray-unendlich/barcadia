@@ -8,15 +8,14 @@ const BasicTextModule = () => {
     <BasicTextModuleStyles>
       <div className="container">
         <h2>
-          A super-fast theme that is easy to get started, using the power of
-          GatsbyJS
+          We are enthusiast of blockchain, especially blockchain infrastructure.
         </h2>
-        <p style={{ marginBottom: "60px" }}>
-          Using modern CSS properties such as grid, this theme is optmised for
-          speed and mobile devices. Giving users an excellent experience on any
-          device. Future-proofing your product.
+        <p>
+        We are contributing to the blockchain infrastructure with hosting several nodes.
         </p>
-        <Button text="View Products" as={Link} to="/products" />
+        <p style={{ marginBottom: "10px" }}>
+        In the other words, we support community members and developers.
+        </p>
       </div>
     </BasicTextModuleStyles>
   )

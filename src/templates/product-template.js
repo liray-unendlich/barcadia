@@ -55,9 +55,9 @@ const productTemplate = ({ data }) => {
       <Layout>
         <BannerModule
           title={name}
-          price={price}
+          // If you want to add price: price={price}
           subTitle={excerpt}
-          enquire={true}
+          enquire={false}
         >
           <GatsbyImage
             className="banner__image"

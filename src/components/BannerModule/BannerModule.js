@@ -19,7 +19,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
           <StaticImage
             className="banner__image"
             imgClassName="banner__image--content"
-            src="../../images/macbook-color.jpg"
+            src="../../images/servers.jpg"
             alt="Banner Image"
             layout="fullWidth"
             placeholder="blurred"
@@ -37,7 +37,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
             {subTitle && <h2>{subTitle}</h2>}
             {price && (
               <h2 className="price">
-                £{price}
+                Fee rate:{price}
                 <span style={{ color: "var(--primary)" }}>.</span>
               </h2>
             )}

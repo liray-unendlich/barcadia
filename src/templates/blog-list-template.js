@@ -48,11 +48,11 @@ const Blog = props => {
     <>
       <Seo title="Blogs" />
       <Layout>
-        <SimpleBanner title="Trade news">
+        <SimpleBanner title="Our Blog">
           <StaticImage
             className="banner__image"
-            src="../images/iphone-camera.jpg"
-            alt="Apple iPhone camera"
+            src="../images/bookshelf.jpg"
+            alt="Bookshelf"
           />
         </SimpleBanner>
         <BlogItems>
@@ -97,6 +97,7 @@ export const query = graphql`
       skip: $skip
       limit: $limit
       sort: { fields: published, order: DESC }
+      filter: { node_locale: { eq: "en-US" } }
     ) {
       edges {
         node {

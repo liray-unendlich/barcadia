@@ -7,23 +7,24 @@ export const BasicTextModuleStyles = styled.section`
 
   @media (min-width: 375px) {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: 768px) {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: 1024px) {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 
   .container {
     @media (min-width: 768px) {
       width: 66vw;
       margin-left: 0;
+      margin-bottom: 0;
     }
   }
 

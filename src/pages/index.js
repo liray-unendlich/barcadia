@@ -13,14 +13,14 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Barcadia"
-          subTitle="A product based template system for GatsbyJS"
+          title="gunu-node"
+          subTitle="The nodefolio of gunu-node(liray-indexer)"
         />
         <BasicTextModule />
+        <Features />
         <PerksModule>
           <Perk title="The Title" content="The content" />
         </PerksModule>
-        <Features />
       </Layout>
     </>
   )

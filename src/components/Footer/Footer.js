@@ -50,6 +50,10 @@ const Footer = () => {
             </a>
             <span>.</span>
           </p>
+          <p>
+            Refined by liray-unendlich
+            <span>.</span>
+          </p>
         </div>
       </div>
     </FooterStyles>

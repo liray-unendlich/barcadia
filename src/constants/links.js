@@ -1,19 +1,13 @@
 import * as React from "react"
 import {
-  FaFacebookSquare as Facebook,
+  FaGithubSquare as Github,
   FaTwitterSquare as Twitter,
-  FaInstagram as Instagram,
-  FaLinkedin as Linkedin,
 } from "react-icons/fa"
 
 export const menuItems = [
   {
     path: "/",
     text: "home",
-  },
-  {
-    path: "/products",
-    text: "products",
   },
   {
     path: "/blog",
@@ -27,19 +21,11 @@ export const menuItems = [
 
 export const socialItems = [
   {
-    path: "www.facebook.com",
-    icon: <Facebook />,
+    path: "https://www.github.com/liray-unendlich",
+    icon: <Github />,
   },
   {
-    path: "www.twitter.com",
+    path: "https://www.twitter.com/liray_indexer",
     icon: <Twitter />,
-  },
-  {
-    path: "www.instagram.com",
-    icon: <Instagram />,
-  },
-  {
-    path: "www.linkedin.com",
-    icon: <Linkedin />,
   },
 ]

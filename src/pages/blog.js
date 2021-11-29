@@ -9,11 +9,11 @@ const blog = () => {
     <>
       <Seo title="Blog" />
       <Layout>
-        <SimpleBanner title="Trade news">
+        <SimpleBanner title="Our Blog">
           <StaticImage
             className="banner__image"
-            src="../images/iphone-camera.jpg"
-            alt="Apple iPhone camera"
+            src="../images/bookshelf.jpg"
+            alt="bookshelf"
           />
         </SimpleBanner>
       </Layout>

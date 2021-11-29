@@ -9,11 +9,11 @@ const Feature = ({ feature }) => {
 
   return (
     <aside className="features__item">
-      <Link to={`/products/${slug}`}>
+      <Link to={`/services/${slug}`}>
         <GatsbyImage
           className="features__item--img"
           image={image}
-          alt="Product Image"
+          alt="Services Image"
         />
         <div className="features__item--content">
           {name && <h2>{name}</h2>}

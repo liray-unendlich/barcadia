@@ -8,10 +8,10 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "Barcadia",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
-    twitterUsername: "@dave",
+    title: "gunu-node",
+    description: "The nodefolio of gunu-node(liray-indexer)",
+    author: "liray",
+    twitterUsername: "@liray_indexer",
     image: "/yellow-metal-design-decoration.jpg",
     siteUrl: "https://barcadia.netlify.com",
   },
@@ -55,5 +55,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-transition-link`,
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en-US',
+        useLangKeyLayout: false
+      }
+    }
   ],
 }
