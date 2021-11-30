@@ -13,7 +13,7 @@ module.exports = {
     author: "liray",
     twitterUsername: "@liray_indexer",
     image: "/yellow-metal-design-decoration.jpg",
-    siteUrl: "https://barcadia.netlify.com",
+    siteUrl: "https://www.gunu-node.com",
   },
   /* Your site config here */
   plugins: [
@@ -44,8 +44,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://barcadia.netlify.com",
-        sitemap: "https://barcadia.netlify.com/sitemap.xml",
+        host: "https://www.gunu-node.com",
+        sitemap: "https://www.gunu-node.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
@@ -61,6 +61,15 @@ module.exports = {
         langKeyDefault: 'en-US',
         useLangKeyLayout: false
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: ['UA-123814375-1'],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
   ],
 }
