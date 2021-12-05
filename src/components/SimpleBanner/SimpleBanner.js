@@ -11,7 +11,6 @@ const SimpleBanner = ({ children, title }) => {
           <div className="banner__content">
             <h1>
               {title}
-              <span style={{ color: "var(--primary)" }}>.</span>
             </h1>
           </div>
         </div>

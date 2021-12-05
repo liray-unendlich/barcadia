@@ -31,10 +31,28 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+  data.products.edges.forEach(({ node }) => {
+    createPage({
+      path: `ja/services/${node.slug}`,
+      component: path.resolve("src/templates/product-template.ja.js"),
+      context: {
+        slug: node.slug,
+      },
+    })
+  })
   data.posts.edges.forEach(({ node }) => {
     createPage({
       path: `blogs/${node.slug}`,
       component: path.resolve("src/templates/blog-template.js"),
+      context: {
+        slug: node.slug,
+      },
+    })
+  })
+  data.posts.edges.forEach(({ node }) => {
+    createPage({
+      path: `ja/blogs/${node.slug}`,
+      component: path.resolve("src/templates/blog-template.ja.js"),
       context: {
         slug: node.slug,
       },
@@ -51,6 +69,18 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: i === 0 ? `/blogs` : `/blogs/${i + 1}`,
       component: path.resolve("./src/templates/blog-list-template.js"),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `ja/blogs` : `ja/blogs/${i + 1}`,
+      component: path.resolve("./src/templates/blog-list-template.ja.js"),
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,

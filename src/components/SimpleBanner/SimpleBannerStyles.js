@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const SimpleBannerStyles = styled.section`
-  height: 70vh;
+  height: 50vh;
   position: relative;
   padding: 30px var(--borderSpacing);
 
@@ -24,7 +24,7 @@ export const SimpleBannerStyles = styled.section`
   .banner__content {
     position: relative;
     z-index: 2;
-    height: 20vh;
+    height: 10vh;
     width: 100%;
 
     @media (min-width: 768px) {

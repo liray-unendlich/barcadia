@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import MenuContext from "../MenuContext"
 import { NavModuleStyles } from "./NavModuleStyles"
 import { motion } from "framer-motion"
-import { menuItems } from "./NavConstants"
+import { menuItems } from "./NavConstants.ja"
 import {
   barOneVariants,
   barTwoVariants,
@@ -12,14 +12,12 @@ import {
 } from "./NavAnim"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 
-const NavModule = () => {
+const NavModule = ({title}) => {
   const [isOpen, setNav] = useContext(MenuContext)
 
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
-
-  const { title } = UseSiteMetadata()
 
   return (
     <NavModuleStyles>

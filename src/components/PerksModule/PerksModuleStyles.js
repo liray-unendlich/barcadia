@@ -6,6 +6,10 @@ export const PerksModuleStyles = styled.section`
   background-color: #000;
   position: relative;
 
+  h2 {
+    position: relative;
+  }
+
   .perks__image--bg {
     position: absolute;
     top: 0;
@@ -121,18 +125,14 @@ export const PerkStyles = styled.aside`
     }
   }
 
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 
   @media (min-width: 375px) {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: 768px) {
-    margin-bottom: 100px;
-  }
-
-  @media (min-width: 1024px) {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: 1154px) {

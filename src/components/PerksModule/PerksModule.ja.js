@@ -15,12 +15,12 @@ const PerksModule = () => {
       />
       <div className="perks__image--overlay"></div>
       <h2>
-        Here is backbone service of this site:<br></br>
+        このサイトのバックボーンは次の通りです:<br></br>
       </h2>
       <div className="container">
         <Perk
-          title="Built For Speed"
-          content="By using GatsbyJS, this site is super-fast out of the box"
+          title="サイトの高速化"
+          content="GatsbyJSの使用による表示の高速化"
         >
           <StaticImage
             src="../../images/logos/gatsby-logo.svg"
@@ -30,8 +30,8 @@ const PerksModule = () => {
           />
         </Perk>
         <Perk
-          title="Built For Content"
-          content="Contentful helps us as headlessCMS"
+          title="コンテンツの管理"
+          content="Contentfulによるコンテンツ管理"
         >
           <StaticImage
             src="../../images/logos/contentful-logo.svg"
@@ -41,8 +41,8 @@ const PerksModule = () => {
           />
         </Perk>
         <Perk
-          title="Built For Security"
-          content="A static site reduces chances of a security exposure through injection"
+          title="セキュリティの向上"
+          content="静的サイトによるインジェクション対策"
         >
           <StaticImage
             src="../../images/logos/netlify-logo.svg"

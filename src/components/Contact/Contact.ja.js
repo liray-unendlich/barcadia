@@ -5,11 +5,11 @@ const Contact = () => {
   return (
     <ContactStyles>
       <form name="contact" method="POST" netlify>
-        <input placeholder="Your name" type="text" name="name" />
-        <input placeholder="Your email" type="email" name="email" />
-        <textarea placeholder="Your message" name="message" rows="5"></textarea>
+        <input placeholder="お名前" type="text" name="name" />
+        <input placeholder="メールアドレス" type="email" name="email" />
+        <textarea placeholder="メッセージ" name="message" rows="5"></textarea>
         <button className="btn" type="submit">
-          Send Message
+          問い合わせ内容送信
         </button>
       </form>
     </ContactStyles>

@@ -31,14 +31,12 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
             {title && (
               <h1>
                 {title}
-                <span style={{ color: "var(--primary)" }}>.</span>
               </h1>
             )}
             {subTitle && <h2>{subTitle}</h2>}
             {price && (
               <h2 className="price">
                 Fee rate:{price}
-                <span style={{ color: "var(--primary)" }}>.</span>
               </h2>
             )}
             {enquire && <Button text="Enquire Now" as={Link} to="/contact" />}

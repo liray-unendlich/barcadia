@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { menuItems, socialItems } from "../../constants/links"
+import { menuItems, socialItems } from "../../constants/links.ja"
 import { FooterStyles } from "./FooterStyles"
 
 const Footer = () => {

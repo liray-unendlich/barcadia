@@ -1,23 +1,17 @@
 import styled from "styled-components"
 
 export const BasicTextModuleStyles = styled.section`
-  padding: 70px var(--borderSpacing);
+  padding: 5vh var(--borderSpacing);
   color: #fff;
   background-color: #000;
+  padding-bottom: 5vh;
 
   @media (min-width: 375px) {
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 5vh;
   }
 
   @media (min-width: 768px) {
-    padding-top: 100px;
-    padding-bottom: 50px;
-  }
-
-  @media (min-width: 1024px) {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 10vh;
   }
 
   .container {

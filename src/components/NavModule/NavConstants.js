@@ -15,4 +15,8 @@ export const menuItems = [
     path: "/contact",
     text: "contact",
   },
+  {
+    path: "/ja",
+    text: "Japanese",
+  },
 ]

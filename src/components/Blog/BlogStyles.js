@@ -7,8 +7,6 @@ export const BlogItemsStyles = styled.section`
   max-width: 910px;
   margin: 0 auto;
   justify-content: center;
-  padding-top: var(--sectionPadding);
-  padding-bottom: var(--sectionPadding);
 `
 
 export const BlogItemStyles = styled.article`

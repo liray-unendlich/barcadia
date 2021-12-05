@@ -1,9 +1,14 @@
 import styled from "styled-components"
 
 export const BannerModuleStyles = styled.section`
-  height: 100vh;
+  height: 30vh;
   position: relative;
   padding: 30px var(--borderSpacing);
+  min-height: 300px;
+
+  @media (min-width: 450px) {
+    height: 50vh;
+  }
 
   .container {
     height: 100%;
@@ -24,12 +29,8 @@ export const BannerModuleStyles = styled.section`
   .banner__content {
     position: relative;
     z-index: 2;
-    min-height: 33vh;
+    max-height: 200px;
     width: 100%;
-
-    @media (min-width: 768px) {
-      width: 66vw;
-    }
 
     h1,
     .price {

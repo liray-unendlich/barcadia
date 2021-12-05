@@ -6,16 +6,16 @@ import {
 
 export const menuItems = [
   {
-    path: "/",
-    text: "home",
+    path: "/ja",
+    text: "ホーム",
   },
   {
-    path: "/blogs",
-    text: "blog",
+    path: "/ja/blogs",
+    text: "ブログ",
   },
   {
-    path: "/contact",
-    text: "contact",
+    path: "/ja/contact",
+    text: "問い合わせ",
   },
 ]
 

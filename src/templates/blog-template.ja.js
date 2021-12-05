@@ -48,7 +48,7 @@ const Blog = ({ data }) => {
             <article className="blogsingle__content">
               {renderRichText(richText, options)}
               <div className="blogsingle__back">
-                <Button to="/blogs" text="Back to news" as={Link} />
+                <Button to="/ja/blogs" text="一覧に戻る" as={Link} />
               </div>
             </article>
           </BlogSingleStyles>
@@ -59,13 +59,13 @@ const Blog = ({ data }) => {
 }
 
 export const query = graphql`
-  query getPost($slug: String!) {
+  query getPostJa($slug: String!) {
     post: contentfulPosts(
       slug: { eq: $slug }
-      node_locale: { eq: "en-US" }
+      node_locale: { eq: "ja-JP" }
       ) {
       title
-      published(formatString: "MMMM Do YYYY")
+      published(formatString: "YYYY/MM/DD")
       richText {
         raw
       }
